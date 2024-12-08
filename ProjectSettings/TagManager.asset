@@ -42,14 +42,23 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Player
-    uniqueID: 4118918319
+  - name: CheckPoint
+    uniqueID: 1461772877
     locked: 0
   - name: Obstacle
     uniqueID: 2313429271
     locked: 0
   - name: Wall
     uniqueID: 952767043
+    locked: 0
+  - name: Particle
+    uniqueID: 2764360615
+    locked: 0
+  - name: Player
+    uniqueID: 4118918319
+    locked: 0
+  - name: CameraFlash
+    uniqueID: 1019837969
     locked: 0
   m_RenderingLayers:
   - Default

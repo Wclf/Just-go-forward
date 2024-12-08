@@ -15,8 +15,11 @@ public class CameraFollow : MonoBehaviour
     public Vector2 Xlimit;
     public Vector2 Ylimit;
 
+    public Animator anim;
+
     private void Awake()
     {
+        anim = GetComponent<Animator>();
         target = GameObject.FindGameObjectWithTag("Player").transform;
 
     }
@@ -24,8 +27,11 @@ public class CameraFollow : MonoBehaviour
     private void LateUpdate()
     {
         Vector3 targetPosition = target.position + positionOffset;
+
+        //Clamp(min,max) gioi han tra ve gia tri trong khoang
         targetPosition = new Vector3(Mathf.Clamp(targetPosition.x, Xlimit.x, Xlimit.y), Mathf.Clamp(targetPosition.y, Ylimit.x, Ylimit.y), -10);
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
     }
 
+    
 }
