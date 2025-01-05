@@ -98,6 +98,7 @@ public class MovingPlatform : MonoBehaviour
             movement.isOnPlatform = true; //dieu kien ben scipt movement thanh true
             movement.platformRb = rb; 
             playerRb.gravityScale = playerRb.gravityScale * 50; //tang trong luc cho nhan vat de khi dung tren platform ko bi day len
+
         }
     }
 
@@ -105,8 +106,10 @@ public class MovingPlatform : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
+            playerRb.linearVelocity = Vector2.zero;
             movement.isOnPlatform = false;
             playerRb.gravityScale = playerRb.gravityScale / 50; //tra lai trong luc ban dau
+
 
         }
     }

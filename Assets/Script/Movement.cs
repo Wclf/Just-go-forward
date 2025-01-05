@@ -7,6 +7,7 @@ using UnityEngine.Rendering;
 
 public class Movement : MonoBehaviour
 {
+    AudioManager audioManager;
     Rigidbody2D rb;
     Animator animator;
 
@@ -35,6 +36,7 @@ public class Movement : MonoBehaviour
 
     private void Awake()
     {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
@@ -67,6 +69,7 @@ public class Movement : MonoBehaviour
 
         if(isWallTouch )
         {
+            audioManager.PlaySFX(audioManager.wallTouch);
             Flip();
         }
     }
@@ -119,7 +122,7 @@ public class Movement : MonoBehaviour
             speedMultiplier += Time.deltaTime * accleration;
         }
         else if (!btnPressed && speedMultiplier > 0)
-        {
+        {   
             speedMultiplier -= Time.deltaTime * accleration;
             if(speedMultiplier < 0)
             {

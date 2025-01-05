@@ -11,13 +11,16 @@ public class GameController : MonoBehaviour
     Rigidbody2D rb;
     ShadowCaster2D shadowCaster;
     CameraFollow cameraFollow;
+    AudioManager audioManager;
 
     [SerializeField] ParticleSystem diePartical;
     private void Awake()
     {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         cameraFollow = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraFollow>();
         rb = GetComponent<Rigidbody2D>();
         shadowCaster = GetComponent<ShadowCaster2D>();
+
     }
 
     private void Start()
@@ -46,6 +49,7 @@ public class GameController : MonoBehaviour
 
     IEnumerator Respawn(float duration)
     {
+        audioManager.PlaySFX(audioManager.death);
         GetComponent<Animator>().enabled = false; // tat animator de tranh cac hieu ung cu con chay
         cameraFollow.anim.SetBool("isFlash", true); //bat hieu ung flash cua man hinh
         diePartical.Play(); //bat hieu ung khi chet
@@ -61,10 +65,5 @@ public class GameController : MonoBehaviour
 
         shadowCaster.enabled = true;
         cameraFollow.anim.SetBool("isFlash", false);
-
-
-
-
-
     }
 }
