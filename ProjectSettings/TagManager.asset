@@ -58,6 +58,9 @@ TagManager:
   - name: Player
     uniqueID: 4118918319
     locked: 0
+  - name: PlayerNoLight
+    uniqueID: 1434411099
+    locked: 0
   - name: CameraFlash
     uniqueID: 1019837969
     locked: 0

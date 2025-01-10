@@ -13,6 +13,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip checkPoint;
     public AudioClip portalIn;
     public AudioClip portalOut;
+    public AudioClip ButtonClick;
 
     private void Start()
     {

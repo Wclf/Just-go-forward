@@ -408,6 +408,7 @@ MonoBehaviour:
   checkPoint: {fileID: 8300000, guid: 3940c33984a83e842a67c92f047b1d55, type: 3}
   portalIn: {fileID: 8300000, guid: d50bbc57d2852164d9a1d25f526973ef, type: 3}
   portalOut: {fileID: 8300000, guid: 143e038093e3a39468883c17cbc24eba, type: 3}
+  ButtonClick: {fileID: 8300000, guid: 14d42142905bfdc45bb2bb5949eca062, type: 3}
 --- !u!1 &4886796566249267238
 GameObject:
   m_ObjectHideFlags: 0
