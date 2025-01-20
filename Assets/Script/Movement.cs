@@ -1,9 +1,6 @@
-﻿using System.Security.Cryptography;
-using UnityEditor.Tilemaps;
-using UnityEditorInternal;
+﻿
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Rendering;
 
 public class Movement : MonoBehaviour
 {
