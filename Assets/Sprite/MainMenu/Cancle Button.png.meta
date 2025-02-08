@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cancle Button_0: -6490462202804676142
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
