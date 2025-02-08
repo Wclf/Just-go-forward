@@ -3,7 +3,7 @@
 </p>
 
 # Just Go Forward
-Just Move is the first game i made. The game is very simple becasue I am still learning how to code games. In the game, you only need to move to collect carrots or cherrys. When your score is full, you can move the next secene. Be careful to avoid the weapons!
+Just Go Forward is the second game I made. In this game, I included a level panel and a save feature to keep track of the highest level you reach. There are also some obstacles that I think suit the game well. Enjoy it! If you want, I can create more levels.
 
 Note: Unity2D version is 6000.0.27f1
 
